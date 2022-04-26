@@ -97,6 +97,7 @@ export default {
                   this.$router.push({
                     name:"Home",
                   })
+                  window.sessionStorage.setItem('personal',JSON.stringify(response.data[0]));
                 }else{
                   this.open4();
                 }
@@ -125,7 +126,7 @@ export default {
 
 <style>
 body {
-  background: url("../../../public/5848e4a37f5e4fb39f4c4384a9c27523.jpg")
+  background: url("../../public/5848e4a37f5e4fb39f4c4384a9c27523.jpg")
     no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;

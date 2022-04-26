@@ -1,17 +1,27 @@
 import VueRouter from 'vue-router';
 
-import Home from '../components/Home/Home.vue';
-import Login from '../components/Login/Login.vue';
+import Home from '../components/Home.vue';
+import Login from '../components/Login.vue';
+import Sheet from '../components/Home/Sheet.vue';
+
 const routes=[
     {
         path:'/',
         name:'Login',
-        component:Login
+        component:Login,
     },
     {
         path:'/home',
         name:'Home',
-        component:Home
+        component:Home,
+        children:[
+            {
+                path:'sheet',
+                name:'Sheet',
+                component:Sheet,
+            },
+        ]
+
     }
 ]
 
