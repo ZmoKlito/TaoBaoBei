@@ -10,8 +10,10 @@ app.use(bodyParser.json());
 let pool=mysql.createPool(config);
 
 let login=require('./routes/Login');
+let home=require('./routes/Home');
 
 app.use("/",login);
+app.use("/home",home);
 
 
 app.listen(3333);

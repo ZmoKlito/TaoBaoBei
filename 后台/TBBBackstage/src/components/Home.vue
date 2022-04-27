@@ -74,10 +74,6 @@ export default {
 </script>
 
 <style>
-html,
-body {
-  height: 100%;
-}
 .el-header,
 .el-footer {
   background-color: #b3c0d1;
@@ -106,6 +102,7 @@ body > .el-container {
   height: 100%;
 }
 #Home {
+  width: 100%;
   height: 100%;
 }
 .personal {

@@ -18,7 +18,7 @@
           label-width="100px"
           class="demo-ruleForm"
         >
-          <el-form-item label="用户名" prop="userName">
+          <el-form-item label="用户名" prop="userName" class="item">
             <el-input
               class="input"
               type="text"
@@ -125,16 +125,11 @@ export default {
 </script>
 
 <style>
-body {
-  background: url("../../public/5848e4a37f5e4fb39f4c4384a9c27523.jpg")
-    no-repeat;
-  background-size: 100% 100%;
-  background-attachment: fixed;
-}
 .box {
   width: 70%;
   height: 400px;
-  margin: 150px auto;
+  margin: 0 auto;
+  padding-top: 150px;
 }
 .box_img {
   width: 50%;
