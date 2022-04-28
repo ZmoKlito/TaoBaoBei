@@ -45,19 +45,39 @@
                 <div class="classification-data-bottom">
                     <div class="cdb-left">
                         <ul>
-                         <li class="cdb-left_li" >1 <div class="el-icon-arrow-right"style='margin-right:20px;float:right; margin-top:25px;'></div></li>
-                         <li class="cdb-left_li">2 <span class="el-icon-arrow-right"style='margin-right:20px;float:right; margin-top:25px;'></span></li>
-                         <li class="cdb-left_li">3 <span class="el-icon-arrow-right"style='margin-right:20px;float:right; margin-top:25px;'></span></li>
-                         <li class="cdb-left_li">4 <span class="el-icon-arrow-right"style='margin-right:20px;float:right; margin-top:25px;'></span></li>
-                         <li class="cdb-left_li">5 <span class="el-icon-arrow-right"style='margin-right:20px;float:right; margin-top:25px;'></span></li>
-                         <li class="cdb-left_li">6 <span class="el-icon-arrow-right"style='margin-right:20px;float:right; margin-top:25px;'></span></li>
-                         <li class="cdb-left_li">7 <span class="el-icon-arrow-right"style='margin-right:20px;float:right; margin-top:25px;'></span></li>
-                         <li class="cdb-left_li">8 <span class="el-icon-arrow-right"style='margin-right:20px;float:right; margin-top:25px;'></span></li>
-                         <li class="cdb-left_li">7 <span class="el-icon-arrow-right"style='margin-right:20px;float:right; margin-top:25px;'></span></li>
-                         <li class="cdb-left_li">8 <span class="el-icon-arrow-right"style='margin-right:20px;float:right; margin-top:25px;'></span></li>
-                         <li class="cdb-left_li">7 <span class="el-icon-arrow-right"style='margin-right:20px;float:right; margin-top:25px;'></span></li>
-                         <li class="cdb-left_li">9 <span class="el-icon-arrow-right"style='margin-right:20px;float:right; margin-top:25px;'></span></li>
-                         <li class="cdb-left_li">10 <span class="el-icon-arrow-right"style='margin-right:20px;float:right; margin-top:25px;'></span></li>
+                         <li class="cdb-left_li">1
+                            <div class="el-icon-arrow-right" style='margin-right:20px;float:right; margin-top:25px;'>
+                                <div class="test">
+                                    <ul>
+                                        <li>新品服装</li>
+                                        <li>时尚外饰</li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                          <li class="cdb-left_li">2
+                            <div class="el-icon-arrow-right" style='margin-right:20px;float:right; margin-top:25px;'>
+                                <div class="test">
+                                    <ul>
+                                        <li>新品服装2</li>
+                                        <li>时尚外饰3</li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                         <li class="cdb-left_li">3 <span class="el-icon-arrow-right" style='margin-right:20px;float:right; margin-top:25px;'></span></li>
+                         <li class="cdb-left_li">4 <span class="el-icon-arrow-right" style='margin-right:20px;float:right; margin-top:25px;'></span></li>
+                         <li class="cdb-left_li">5 <span class="el-icon-arrow-right" style='margin-right:20px;float:right; margin-top:25px;'></span></li>
+                         <li class="cdb-left_li">6 <span class="el-icon-arrow-right" style='margin-right:20px;float:right; margin-top:25px;'></span></li>
+                         <li class="cdb-left_li">7 <span class="el-icon-arrow-right" style='margin-right:20px;float:right; margin-top:25px;'></span></li>
+                         <li class="cdb-left_li">8 <span class="el-icon-arrow-right" style='margin-right:20px;float:right; margin-top:25px;'></span></li>
+                         <li class="cdb-left_li">7 <span class="el-icon-arrow-right" style='margin-right:20px;float:right; margin-top:25px;'></span></li>
+                         <li class="cdb-left_li">8 <span class="el-icon-arrow-right" style='margin-right:20px;float:right; margin-top:25px;'></span></li>
+                         <li class="cdb-left_li">7 <span class="el-icon-arrow-right" style='margin-right:20px;float:right; margin-top:25px;'></span></li>
+                         <li class="cdb-left_li">9 <span class="el-icon-arrow-right" style='margin-right:20px;float:right; margin-top:25px;'></span></li>
+                         <li class="cdb-left_li">10 <span class="el-icon-arrow-right" style='margin-right:20px;float:right; margin-top:25px;'></span></li>
                         </ul>
                     </div>
                     <div class="cdb-right">
@@ -273,6 +293,29 @@ name:'appHomepage',
     list-style: none;
 }
 
+
+
+.cdb-left_li:hover .test{
+    width: 995px; 
+}
+.cdb-left_li:hover .test ul{
+    display: block;
+}
+.test{
+    width: 0px;
+    transition: width 0.2s;
+    height:675px;
+    background:grey;
+    position: absolute;
+    color: red;
+    z-index: 100;
+    top:260px;
+    margin-left:40px;
+}
+
+.test ul{
+    display: none;
+}
 
 
 /* 导航样式 */
